@@ -9,7 +9,7 @@ defineSupportCode(function ({ Given, Then, When }) {
     answer = input;
   });
 
-  When("I make an API call using promises", function () {
+  When("I whant some information about the postal code", function () {
     return axios
       .get(`https://apicarto.ign.fr/api/codes-postaux/communes/${answer}`)
       .then((res) => {
